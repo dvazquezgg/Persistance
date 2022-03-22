@@ -1,0 +1,22 @@
+ID,Question,A0, A1, A2, A3, Subject
+fac_1,factorize : x^2 - 4x + 4,(x-2)^2, (x-2x)^2,(x-4)^2, (x+2)^2, Math
+fac_2,factorize : 15x + 25, 5(3x+5), 3(5x+3), 3(3x+5), 5(5x+10), Math
+dif_1,Differentiate 20x^-4 + 9 ,y’ = -80x-5, y’ = 80x+5, y’ = -80x+5, y’ = 80x-5, Math
+dif_2,Differentiate 10x2 with respect to x,y’ = 20x, y’ = 20x, y’ = 20x, y’ = 20x, Math
+trig_1,Find x and H in the right triangle below,"x = 10 / tan(51°) = 8.1 | H = 10 / sin(51°) = 13", "x = 10 / tan(51°) = 8.5 | H = 10 / sin(51°) = 11", "x = 10 / tan(51°) = 7.1 | H = 10 / sin(51°) = 12", "x = 10 / tan(51°) = 8.8 | H = 10 / sin(51°) = 14", Math
+topic_1,img: topic_1_1, Ans1_1_1, Ans2_1_1, Ans3_1_1, Ans4_1_1, Math
+topic_1,img: topic_1_2, Ans1_1_2, Ans2_1_2, Ans3_1_2, Ans4_1_2, Math
+topic_1,img: topic_1_3, Ans1_1_3, Ans2_1_3, Ans3_1_3, Ans4_1_3, Math
+topic_1,img: topic_1_4, Ans1_1_4, Ans2_1_4, Ans3_1_4, Ans4_1_4, Math
+topic_2,img: topic_2_1, Ans1_2_1, Ans2_2_1, Ans3_2_1, Ans4_2_1, Math
+topic_2,img: topic_2_2, Ans1_2_2, Ans2_2_2, Ans3_2_2, Ans4_2_2, Math
+topic_2,img: topic_2_3, Ans1_2_3, Ans2_2_3, Ans3_2_3, Ans4_2_3, Math
+topic_2,img: topic_2_4, Ans1_2_4, Ans2_2_4, Ans3_2_4, Ans4_2_4, Math
+topic_3,img: topic_3_1, Ans1_3_1, Ans2_3_1, Ans3_3_1, Ans4_3_1, Math
+topic_3,img: topic_3_2, Ans1_3_2, Ans2_3_2, Ans3_3_2, Ans4_3_2, Math
+topic_3,img: topic_3_3, Ans1_3_3, Ans2_3_3, Ans3_3_3, Ans4_3_3, Math
+topic_3,img: topic_3_4, Ans1_3_4, Ans2_3_4, Ans3_3_4, Ans4_3_4, Math
+topic_4,img: topic_4_1, Ans1_4_1, Ans2_4_1, Ans3_4_1, Ans4_4_1, Math
+topic_4,img: topic_4_2, Ans1_4_2, Ans2_4_2, Ans3_4_2, Ans4_4_2, Math
+topic_4,img: topic_4_3, Ans1_4_3, Ans2_4_3, Ans3_4_3, Ans4_4_3, Math
+topic_4,img: topic_4_4, Ans1_4_4, Ans2_4_4, Ans3_4_4, Ans4_4_4, Math

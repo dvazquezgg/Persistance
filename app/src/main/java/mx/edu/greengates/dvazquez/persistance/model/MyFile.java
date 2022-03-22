@@ -4,6 +4,12 @@ import android.app.Application;
 
 import java.io.Serializable;
 
+/**
+ * This class extends Application to be able to be shared across all Activities in the App
+ * It also implements Serializable to work with the ObjectInputStream auxiliar class
+ * The properties only reflect what you need  for the class to store
+ *
+ */
 public class MyFile extends Application implements Serializable {
 
     String name;
