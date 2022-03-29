@@ -1,0 +1,15 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:collapseColumns="0"> <!-- collapse the first column of the table row-->
+
+    <!-- first row of the table layout-->
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Add elements/columns in the first row-->
+
+    </TableRow>
+</TableLayout>

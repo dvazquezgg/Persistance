@@ -36,7 +36,7 @@ public class Questions {
     public List<String> getAllTopics(){
         List<String> topics = new ArrayList<>();
         for( Question question: questions){
-            if(!topics.contains(question.getId())){
+            if(!topics.contains(question.getId())){ // If we dont have the topic added to the list
                 topics.add(question.getId());
             }
         }

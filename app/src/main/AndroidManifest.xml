@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mx.edu.greengates.dvazquez.persistance">
 
-    <!-- android:name = "MyFile Class is a special class we will use for persistance across the App" -->
     <application
         android:name=".model.MyFile"
         android:allowBackup="true"
@@ -11,6 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Persistance">
+        <activity
+            android:name=".ResultsTableActivity"
+            android:exported="false" />
         <activity
             android:name=".NewActivity"
             android:exported="false" />

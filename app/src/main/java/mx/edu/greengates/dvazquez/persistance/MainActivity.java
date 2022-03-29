@@ -12,6 +12,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,6 +23,8 @@ import mx.edu.greengates.dvazquez.persistance.model.MyFile;
 import mx.edu.greengates.dvazquez.persistance.model.Question;
 import mx.edu.greengates.dvazquez.persistance.model.Questions;
 import mx.edu.greengates.dvazquez.persistance.storage.CSVReader;
+import mx.edu.greengates.dvazquez.persistance.storage.FileStorageAndroidImpl;
+import mx.edu.greengates.dvazquez.persistance.storage.IStorageAndroid;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 
@@ -46,14 +49,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Question currQuestion;
     String currTopic;
     int score;
-
+    MyFile myFile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         // Create the Main Object for persistance (MyFileObject)
-        final MyFile myFile = (MyFile) getApplicationContext();
+        myFile = (MyFile) getApplicationContext();
         fillMyFile(myFile);
 
         //Read all Questions from the CSV File
@@ -62,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         List<String> topics = questions.getAllTopics();
         List<String> topicWithImage = pickTopics(questions, topics);
 
-        questionWithImages = new String[topicWithImage.size()];
+        questionWithImages = new String[topicWithImage.size()]; // String[] array = new String[4];
         topicWithImage.toArray(questionWithImages);
 
         questionMap = createQuestionMap(questionWithImages,questions);
@@ -147,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         for(String topic: questionWithImages){
 
             List<Question> selectedQuestions = questions.getAllQuestionsByTopic(topic);
-            int[] imageIDS = new int[selectedQuestions.size()];
+            int[] imageIDS = new int[selectedQuestions.size()]; // int[] array = int[4];
             int pos = 0;
             for(Question question: selectedQuestions){
                 String questionText = question.getQuestion();
@@ -202,8 +205,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btnNext)
         {
+            /* IStorageAndroid myStorage = new FileStorageAndroidImpl("userdata.txt");
+            try {
+                myStorage.updateManagementData(this, myFile);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             Intent myIntent = new Intent(MainActivity.this, NewActivity.class);
             myIntent.putExtra("username", "abc123"); //Optional parameters
+            MainActivity.this.startActivity(myIntent); */
+            Intent myIntent = new Intent(MainActivity.this, ResultsTableActivity.class);
             MainActivity.this.startActivity(myIntent);
         }
         if (v == btnCheck) {
